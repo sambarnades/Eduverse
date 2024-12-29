@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "Eduverse_backend": {
+      "main": "src/Eduverse_backend/main.mo",
+      "type": "motoko"
+    },
+    "Eduverse_frontend": {
+      "dependencies": [
+        "Eduverse_backend"
+      ],
+      "source": [
+        "src/Eduverse_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "Eduverse_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
